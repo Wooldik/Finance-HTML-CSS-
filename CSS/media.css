@@ -1,0 +1,471 @@
+@media screen and (max-width: 1340px) {
+  #menu {
+    display: block;
+
+    cursor: pointer;
+  }
+
+  .main-menu {
+    transition: opacity 0.3 ease;
+    position: fixed;
+    left: -100vw;
+    right: unset;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    background: #000;
+    z-index: 999;
+  }
+  .main-menu > li:first-child {
+    display: block;
+  }
+
+  .main-menu.open {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .service-right {
+    flex-wrap: wrap;
+  }
+  .group1 {
+    padding-top: 120px;
+  }
+  .group2 {
+    padding-top: 20px;
+  }
+  .service-left__bottom {
+    bottom: 20%;
+  }
+  /* ------------function---------------- */
+  .function-mid__group {
+    display: inline;
+  }
+  .group-text {
+    text-align: center;
+  }
+  .group-img {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .group-img {
+    height: 75px;
+  }
+  .group-img img {
+    height: 100%;
+  }
+  /* -----------------blog-------------- */
+
+  #blog-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .blog-img-container:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .blog-img-container:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .blog-img-container:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .blog-img-container:nth-child(5) {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin-bottom: 116px;
+  }
+  .blog-img-container:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .blog-img-container:nth-child(7) {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+  .blog-img-container {
+    padding: 0;
+  }
+  /* --------------------------contacts------------------ */
+  .contacts__position {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 60%;
+  }
+  .nav {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  .slider {
+    margin: 0 0 0 20%;
+    text-align: center;
+  }
+  /* ------------------------service------------------ */
+  #service {
+    width: 100%;
+  }
+  /* ----------------company---------------- */
+
+  #company {
+    background: none;
+    height: 100%;
+  }
+  .company-group {
+    margin: 0 auto;
+  }
+  .double {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header-bar i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .nav {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+  .slider-center .future {
+    font-size: 24px;
+  }
+  .slider-center h1 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  /* ------------------------service------------------ */
+  #service {
+    flex-wrap: wrap;
+  }
+  .service-left {
+    max-width: 768px;
+    min-width: 320px;
+  }
+
+  .text__company {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+  }
+  .text__company h3 {
+    font-size: 26px;
+    color: #009688;
+    padding-bottom: 0px;
+  }
+
+  /* ----------------company---------------- */
+
+  .value-img {
+    display: none;
+  }
+  .value-img2 {
+    display: block;
+    margin: 0 auto;
+  }
+  /* .double {
+    position: relative;
+  } */
+  .value h3 {
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .value p {
+    font-size: 16px;
+    font-family: "Muli";
+    line-height: 21.95px;
+    color: #757575;
+    text-align: center;
+    padding-bottom: 50px;
+    padding: 30px;
+  }
+  .value-text .p1,
+  .value-text .p2,
+  .value-text .p3 {
+    max-width: 100%;
+    position: static;
+  }
+  .value-text {
+    /* background: url(/image/CircleRaec.png) center / contain no-repeat; */
+
+    position: relative;
+    display: block;
+  }
+  .text__company {
+    position: absolute;
+    top: 55px;
+    padding-left: 42.9%;
+    left: 0;
+  }
+  .text__company h3 {
+    padding-bottom: 0;
+  }
+  .text__company p {
+    padding: 0;
+  }
+  .value-text span {
+    display: none;
+  }
+  #experts button {
+    padding: 15px;
+  }
+  /* ------------function---------------- */
+  #mid {
+    background: url(../image/bg3.jpg) center / cover no-repeat;
+  }
+  .function-mid {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 30px;
+  }
+  /* -----------------blog-------------- */
+
+  #blog-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .blog-item-text {
+    grid-column: 1/-1;
+    height: 50px;
+  }
+  .blog-img-container:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  .blog-img-container:nth-child(3) {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+  .blog-img-container:nth-child(4) {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+  .blog-img-container:nth-child(5) {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+  }
+  .blog-img-container:nth-child(6) {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    margin-bottom: 116px;
+  }
+  .blog-img-container:nth-child(7) {
+    grid-column: 1/-1;
+    grid-row: 7/8;
+  }
+  /* --------------------------contacts------------------ */
+  .contacts__position > .contact {
+    flex-basis: 385px;
+  }
+  .contacts__position > .contact h4 {
+    text-align: center;
+  }
+  .contact > .contact-links > div:last-child {
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* -----------MAIN------------------- */
+  #top {
+    height: 70vh;
+  }
+
+  .header {
+    padding: 40px 4% 10%;
+  }
+  .slider-center .future {
+    font-size: 13px;
+  }
+  .slider {
+    margin: 0 10% 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  .column {
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  .slider-button a {
+    padding: 16px 25px;
+  }
+  .slider-right {
+    justify-self: center;
+    align-self: center;
+    margin: 45px 0 0 25px;
+  }
+  .blog-img-desc div {
+    width: 250px;
+    height: 188px;
+    text-align: center;
+  }
+  /* -----------------------Experts------------------ */
+
+  #experts h2 {
+    font-size: 24px;
+  }
+
+  #experts p {
+    font-size: 14px;
+  }
+  #experts button {
+    font-size: 14px;
+    margin: 15px 30px;
+  }
+  /* ------------function---------------- */
+
+  .function-mid {
+    margin: 0 10%;
+    display: block;
+  }
+  #function p {
+    padding: 0 10px;
+  }
+  .function-mid__group {
+    display: block;
+    margin: 20px 0;
+  }
+  #blog-item-text {
+    height: -1;
+  }
+  #blog-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog-item-text {
+    height: auto;
+  }
+
+  /* -------------twiter--------------- */
+  #twiter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .twiter-text p {
+    padding-top: 20px;
+  }
+
+  .contact:nth-child(2) > .contact-links > div > a {
+    padding: 0 34px 25px 25px;
+  }
+  .contact:nth-child(3) form input {
+    width: 80%;
+    margin-left: 23px;
+  }
+  .contact:first-child > .news {
+    margin: 0 20px;
+  }
+  .contact:nth-child(3) p {
+    width: 100%;
+    text-align: center;
+  }
+  .contact:nth-child(3) .messenger {
+    display: flex;
+    justify-content: center;
+  }
+  .copy {
+    padding-bottom: 15px;
+  }
+  .blog-img {
+    width: 100%;
+  }
+  .contact:nth-child(3) p {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact:last-child ul {
+    list-style: none;
+    padding: 0 10px;
+  }
+  .contact:nth-child(3) form input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav > div {
+    display: none;
+  }
+  header > nav {
+    width: 90%;
+    display: block;
+  }
+  #menu {
+    text-align: center;
+  }
+  .service-left {
+    max-width: 768px;
+    min-width: 320px;
+  }
+
+  .value-img2 {
+    width: 90%;
+  }
+  .value h3 {
+    font-size: 16px;
+  }
+  .value p {
+    font-size: 14px;
+  }
+  .text__company {
+    top: 52px;
+  }
+  #experts p {
+    font-size: 14px;
+    padding: 18px 10px;
+  }
+  #experts button {
+    margin: 15px 30px;
+  }
+  .blog-img {
+    width: 100%;
+  }
+
+  .contact:last-child p {
+    text-align: center;
+  }
+  .contact:nth-child(2) > .contact-links > div > a {
+    padding: 0 25px 25px 25px;
+  }
+}
